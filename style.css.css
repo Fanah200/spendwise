@@ -1,0 +1,132 @@
+/* Element Selector: Styles the whole body text and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 40px;
+    color: #333;
+}
+
+/* Class Selector: Styles your header section to make it distinct */
+.app-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Class Selector: Styles your Dashboard Section */
+.dashboard-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Class Selector: Styles your History List Placeholder */
+.history-container {
+    background-color: #eef2f3;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed #bdc3c7;
+    margin-bottom: 20px;
+}
+
+/* Class Selector: Styles your Input Form Section */
+.form-container {
+    background-color: #eaeded;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Form styling blocks */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input, .form-control select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   WEEK 2 UPGRADES & ADVANCED SELECTORS (Rubric Requirements 1, 4, & 5)
+   ========================================================================== */
+
+/* 1. Advanced Selector: Direct Child Selector */
+.form-control > input, .form-control > select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* 2. Advanced Selector: Focus State Pseudo-class */
+.form-control > input:focus, .form-control > select:focus {
+    outline: 2px solid #27ae60;
+    background-color: #fff;
+}
+
+/* Interactive Cursor Rule adjustment */
+.submit-btn {
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #219653;
+}
+
+/* Table Architecture Requirements */
+.expense-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges borders cleanly */
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+/* 3. Advanced Selector: Descendant Selector */
+.history-container th, .history-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-table thead tr {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* 4. Advanced Selector: Positional Pseudo-class (Zebra striping) */
+.expense-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Interactive Table Hover requirement */
+.expense-table tbody tr:hover {
+    background-color: #f1f9f5;
+}
