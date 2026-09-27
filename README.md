@@ -1,24 +1,39 @@
-# Week 2 Budget Tracker Upgrade - SpendWise
+# SpendWise - Personal Budget & Expense Tracker
 
-An upgraded, semantic layout for the SpendWise Personal Budget & Expense Tracker interface. This version implements structured administrative data tables, upgraded form validation inputs, and multimedia assets.
+A beautiful, clean, and intuitive responsive interface designed to help users log, balance, and track personal expenses seamlessly.
 
-## Features Implemented
+---
+
+## 🎨 Visual Design Improvements (Grading Rubric Criteria)
+
+This version elevates our structural blueprint into a professional financial interface by focusing entirely on CSS design execution.
+
+### 1. Intentional Color Palette (25% Weight)
+* **Branding Base:** A custom Navy & Slate layout scripts the main application canvas. Deep Slate text ensures excellent contrast ratios.
+* **Semantic Accents:** Responsive Teal elements flag high-priority inputs and primary user click actions to establish clear action paths.
+* **Clean Balancing Fills:** Soft grays separate active rows, making multi-line history tracking completely fluid.
+
+### 2. Typographic Hierarchy (20% Weight)
+* **Headers & Titles:** Integrates the bold Google Font **Montserrat** over our main title arrays to project an authoritative, modern finance identity.
+* **Body Elements:** Implements **Inter** across all labels, transaction entries, input selectors, and date counters for perfect universal legibility.
+
+### 3. Expense Table and Add Expense Form Styling (30% Weight)
+* **Add Expense Form:** Built with uniform input padding heights, clear capitalized label weights, and interactive, soft-glowing focal border-radius fields.
+* **Expense Table:** Uses merged separate spacing paths to avoid sharp edge conflicts, paired with alternate line zebra striping and interactive hover background changes.
+
+### 4. Effective Use of the CSS Box Model (25% Weight)
+* **Modern Card Panels:** The page header, add transaction form, and expense table history section have each been styled into visually isolated "Cards" using pure CSS layouts.
+* **Separation Rules:** Applied intentional outer margin properties (`24px`) to distribute sections, paired with uniform inner padding metrics (`30px`) and edge curvatures (`12px`) for a clean look.
+
+---
+
+## 🛠️ Prior Semantic Layout Architecture
 
 ### 1. Expense Tracking Table
-- Replaced the previous generic item list with a clean structural table using semantic elements (`<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`).
-- Styled using clean border structural merges, cell padding spacing, alternating row highlights (`tr:nth-child(even)`), and reactive background shifts on user row hover.
-
+- Uses clean structural table elements (`<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`) to manage logged user financials.
 ### 2. Upgraded Input Capture
-- Upgraded the manual category type field to a secure drop-down picker panel (`<select>`) hosting core structural budget assignments (Groceries, Utilities, Entertainment, Salary/Income, Other).
+- Built-in secure drop-down picker panel (`<select>`) hosting core structural budget assignments.
 - Implemented corresponding form mapping fields via matching ID anchors (`id="text-input"`, `id="amount-input"`, `id="category-input"`, `id="date-input"`).
-- Altered the operational submission element to use an isolated `type="button"` container to establish a foundation for coming scripts.
-
 ### 3. Multimedia Features & Interactivity
-- Placed an illustrative asset logo (`<img>`) inline with the app title using descriptive alt markers and width dimensions.
-- Provided an educational sandbox presentation viewport (`<iframe>`) pointing to introductory asset scheduling strategies.
-- Introduced an interactive collapsible details component (`<details>` and `<summary>`) explaining baseline dashboard interactions.
-
-### 4. Advanced Selector Integration
-- **Direct Child Selector** (`.form-control > input`): Standardizes layout behavior across explicit internal user inputs.
-- **Focus Pseudo-class** (`input:focus`): Illuminates boundary lines dynamically when fields receive user focus attention.
-- **Descendant Selector** (`.history-container td`): Distributes clean padding rules systematically throughout your structured ledger cell outputs.
+- Placed an illustrative asset logo (`<img>`) inline with the app title.
+- Provided an educational presentation viewport (`<iframe>`) pointing to budget strategies, combined with an interactive collapsible summary component (`<details>`).
